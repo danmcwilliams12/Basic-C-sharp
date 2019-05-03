@@ -1,0 +1,7 @@
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\bin\Debug\TryCatchExercise.exe.config
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\bin\Debug\TryCatchExercise.exe
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\bin\Debug\TryCatchExercise.pdb
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\obj\Debug\TryCatchExercise.csprojAssemblyReference.cache
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\obj\Debug\TryCatchExercise.csproj.CoreCompileInputs.cache
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\obj\Debug\TryCatchExercise.exe
+C:\Users\danie\Documents\GitHub\Basic-C-sharp\TryCatchExercise\TryCatchExercise\obj\Debug\TryCatchExercise.pdb
