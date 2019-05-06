@@ -27,7 +27,7 @@ namespace IncomeComparison
             bool isGreater = weeklyPay1 > weeklyPay2;
             Console.WriteLine("Does Person 1 make more money than Person 2?");
             Console.WriteLine(isGreater.ToString());
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("Press Enter to continue...");
             Console.ReadLine();
 
         }
