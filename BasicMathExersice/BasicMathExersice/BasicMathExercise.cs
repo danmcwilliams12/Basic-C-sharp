@@ -34,7 +34,7 @@ namespace BasicMathExersice
             double num5 = Convert.ToDouble(Console.ReadLine());
             double remainder = num5 % 7;
             Console.WriteLine("Your number divided by seven has a remainder of: " + remainder.ToString());
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("Press Enter to Continue...");
             Console.Read();
         }
     }

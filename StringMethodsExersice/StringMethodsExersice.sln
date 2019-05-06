@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMethodsExersice", "StringMethodsExersice\StringMethodsExersice.csproj", "{DB2F14EC-0C09-42F7-AB22-FDA4F210C5D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB2F14EC-0C09-42F7-AB22-FDA4F210C5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2F14EC-0C09-42F7-AB22-FDA4F210C5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2F14EC-0C09-42F7-AB22-FDA4F210C5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2F14EC-0C09-42F7-AB22-FDA4F210C5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBBDDB7C-D3CA-4123-8C21-4C50CBB9764D}
+	EndGlobalSection
+EndGlobal
