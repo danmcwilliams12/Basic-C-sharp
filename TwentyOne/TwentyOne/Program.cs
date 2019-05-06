@@ -14,14 +14,14 @@ namespace TwentyOne
             //deck = Deck.Shuffle(deck);           
             //deck = Deck.Shuffle(deck: deck, times: 5);            
             // out params must be declared ex.(out <data type> timesShuffled) on function call
-            deck = Deck.Shuffle(deck, out int timesShuffled, 3);
+            
+            deck.Shuffle();
 
             foreach (Card card in deck.Cards)
             {
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
-            Console.WriteLine(deck.Cards.Count());
-            Console.WriteLine("Times shuffled: {0}", timesShuffled);
+            Console.WriteLine(deck.Cards.Count());            
             Console.ReadLine();
 
             

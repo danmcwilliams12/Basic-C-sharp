@@ -32,25 +32,23 @@ namespace TwentyOne
         public List<Card> Cards { get; set; }
 
         //out params must be delcared before optionals
-        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
+        public void Shuffle(int times = 1)
         {
-            timesShuffled = 0;
+            //timesShuffled = 0;
             for (int i = 0; i < times; i++)
-            {
-                timesShuffled++;
+            {                
                 List<Card> tempList = new List<Card>();
                 Random random = new Random();
-                while (deck.Cards.Count > 0)
+                while (Cards.Count > 0)
                 {
-                    int randomIndex = random.Next(0, deck.Cards.Count);
-                    tempList.Add(deck.Cards[randomIndex]);
-                    deck.Cards.RemoveAt(randomIndex);
+                    int randomIndex = random.Next(0, Cards.Count);
+                    tempList.Add(Cards[randomIndex]);
+                    Cards.RemoveAt(randomIndex);
 
                 }
-                deck.Cards = tempList;
-
+                Cards = tempList;
             }
-            return deck;
+            
 
         }
         //public static Deck Shuffle(Deck deck, int times)
