@@ -31,7 +31,7 @@ namespace InsuranceApproval
             bool qualified = (age > 15 && hasDUI == "no" && numTickets <= 3);
             Console.WriteLine("Qualified?");
             Console.WriteLine(qualified.ToString());
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("Press Enter to continue...");
             Console.Read();
         }
     }
