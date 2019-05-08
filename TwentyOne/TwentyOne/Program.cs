@@ -9,7 +9,14 @@ namespace TwentyOne
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
+            Card card1 = new Card();
+            Card card2 = card1;
+            card1.Face = Face.Eight;
+            card2.Suit = Suit.Hearts;
+
+            Console.WriteLine(card2.Face);
+
             //operator overload example
             //Game game = new TwentyOneGame();
             //game.Players = new List<Player>();
