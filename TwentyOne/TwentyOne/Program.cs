@@ -9,7 +9,7 @@ namespace TwentyOne
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             //operator overload example
             //Game game = new TwentyOneGame();
             //game.Players = new List<Player>();
