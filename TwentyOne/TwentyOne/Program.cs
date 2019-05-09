@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 namespace TwentyOne
 {
@@ -8,39 +9,34 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            //string text = "Some text.";            
+            //File.WriteAllText(@"C:\Users\danie\Logs\log.txt", text);
+            //string text = File.ReadAllText(@"C:\Users\danie\Logs\log.txt");
 
+            Console.WriteLine("Welcome to the Grand Hotel and Casino.  Let's start by telling me your name.");
+            string playerName = Console.ReadLine();
 
-            //Polymorphism
-            //Game game = new TwentyOneGame();
-            //List<Game> games = new List<Game>();
-            //games.Add(game);
+            Console.WriteLine("How much money did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
 
-            Deck deck = new Deck();
+            Console.WriteLine("Hello {0}. Would you like to join a game of 21?", playerName);
+            string answer = Console.ReadLine().ToLower();
 
-            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
-            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
-            List<int> numberList = new List<int>() { 3, 45, 12, 8, 0, 4 };
-            int sum = numberList.Sum(x => x + 5);
-            Console.WriteLine(sum);
-
-            //foreach (Card card in newList)
-            //{
-            //    Console.WriteLine(card.Face);
-            //}
-            Console.ReadLine();
-
-
-
-            //deck.Shuffle(3);
-
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-            //Console.WriteLine(deck.Cards.Count());            
-            Console.ReadLine();
-
-
+            if (answer == "yes" || answer == "yeah" || answer == "yup" || answer == "y" || answer == "ya")
+            {
+                Player player = new Player(playerName, bank);
+                Game game = new TwentyOneGame();
+                game += player;
+                player.IsActivelyPlaying = true;
+                while (player.IsActivelyPlaying && player.Balance > 0)
+                {
+                    game.Play();
+                }
+                game -= player;
+                Console.WriteLine("Thank you for playing!");
+            }
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
+            Console.Read();
         }
 
 
