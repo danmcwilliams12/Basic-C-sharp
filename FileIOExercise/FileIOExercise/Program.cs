@@ -13,8 +13,7 @@ namespace FileIOExercise
         {
             Console.WriteLine("Enter a number.");
             string userNumber = Console.ReadLine().ToString();
-            File.WriteAllText(@"C:\Users\danie\Logs\FileIOExercise.txt", userNumber);
-            Console.WriteLine("Your numbers so far...");
+            File.WriteAllText(@"C:\Users\danie\Logs\FileIOExercise.txt", userNumber);            
             Console.WriteLine(File.ReadAllText(@"C:\Users\danie\Logs\FileIOExercise.txt"));
             Console.ReadLine();
         }
