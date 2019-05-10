@@ -20,12 +20,23 @@ namespace Casino.TwentyOne
             Dealer.Hand = new List<Card>();
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
-            Dealer.Deck.Shuffle();
-            Console.WriteLine("Place your bet!");
+            Dealer.Deck.Shuffle();            
 
             foreach (Player player in Players)
-            {              
-                int bet = Convert.ToInt32(Console.ReadLine());
+            {
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet!");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) Console.WriteLine("Please only enter a positive integer.");
+                }
+                if (bet < 0)
+                {
+                    throw new FraudException();
+                }
+                
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
                 {
