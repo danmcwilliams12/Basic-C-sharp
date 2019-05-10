@@ -8,6 +8,9 @@ namespace Casino
 {
     public class Player
     {
+        public Player(string name) : this(name, 100)
+        {
+        }
         public Player(string name, int beginningBalance)
         {
             Hand = new List<Card>();
@@ -20,6 +23,7 @@ namespace Casino
         public int Balance { get; set; }
         public string Name { get; set; }
         public bool IsActivelyPlaying { get; set; }
+        public Guid Id { get; set; }
         //should probably create TwentyOnePlayer but in the interest of time
         public bool Stay { get; set; }
 
