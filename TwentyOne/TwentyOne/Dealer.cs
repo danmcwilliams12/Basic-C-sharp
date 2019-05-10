@@ -18,6 +18,7 @@ namespace TwentyOne
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
+            //streamline appends the file instead of overwriting
             using (StreamWriter file = new StreamWriter(@"C:\Users\danie\Logs\log.txt", true))
             {
                 file.WriteLine(card);
