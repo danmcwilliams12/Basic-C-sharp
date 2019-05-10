@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace TwentyOne
+namespace Casino
 {
     public class Dealer
     {
@@ -21,6 +21,7 @@ namespace TwentyOne
             //streamline appends the file instead of overwriting
             using (StreamWriter file = new StreamWriter(@"C:\Users\danie\Logs\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
                 Deck.Cards.RemoveAt(0);

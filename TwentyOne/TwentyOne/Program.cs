@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using Casino;
 
 namespace TwentyOne
 {
@@ -9,13 +10,7 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            DateTime yearOfBirth = new DateTime(1995, 5, 23, 8, 32, 45);
-            DateTime yearOfgraduation = new DateTime(2013, 6, 1, 16, 34, 22);
-
-            TimeSpan ageAtGraduation = yearOfgraduation - yearOfBirth;
-                
-
-
+                           
             //string text = "Some text.";            
             //File.WriteAllText(@"C:\Users\danie\Logs\log.txt", text);
             //string text = File.ReadAllText(@"C:\Users\danie\Logs\log.txt");
