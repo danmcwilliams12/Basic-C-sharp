@@ -36,7 +36,7 @@ namespace NewsLetterAppMVC.Controllers
                     db.SignUps.Add(signup);
                     db.SaveChanges();
                 }               
-                return View("Success");
+                return View("success");
             }
         }              
     }
